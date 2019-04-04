@@ -15,7 +15,10 @@ namespace Lab08_LINQ
 
     public class Program
     {
+
         public void Data() { Data data = new Data(); }
+
+
         static void Main(string[] args)
         {
             string path = "../../../../jsonData.json";
@@ -30,6 +33,10 @@ namespace Lab08_LINQ
         Console.WriteLine("Hello World!");
         
         }
+        /// <summary>
+        /// parses json and makes querys from the parsed json
+        /// </summary>
+        /// <param name="path">file path</param>
         public static void ReadsJson(string path)
         {
 
@@ -75,6 +82,10 @@ namespace Lab08_LINQ
            
 
         }
+        /// <summary>
+        /// single query req
+        /// </summary>
+        /// <param name="path">file path</param>
         public static void SingleQuery(string path)
         {
             var Data = "";
@@ -96,6 +107,10 @@ namespace Lab08_LINQ
                         
                         
         }
+        /// <summary>
+        /// method query per requirements
+        /// </summary>
+        /// <param name="path">string</param>
         public static void MethodWay(string path)
         {
             var Data = "";
